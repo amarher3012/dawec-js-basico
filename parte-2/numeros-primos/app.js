@@ -1,6 +1,5 @@
 const num1 = parseInt(prompt('Introduce un numero'));
 const num2 = parseInt(prompt('Introduce otro numero mayor que el anterior'));
-const result = [];
 
 const primeNums = (num1, num2) => {
   let result = [];

@@ -7,6 +7,6 @@ const factorial = (num1) => {
     res *= i;
   }
   return res;
-}
+};
 
 alert(factorial(num1));
