@@ -34,4 +34,31 @@ window.onload = () => {
 buttons[0].addEventListener('click', () => alert(buttons[0].id));
 buttons[1].addEventListener('click', () => alert(buttons[1].id));
 
+// Ejercicio 6
+doc.addEventListener('mousemove', (event) => {
+  cX.textContent = 'X:' + event.clientX;
+  cY.textContent = 'Y:' + event.clientY;
+});
 
+// Ejercicio 7
+
+c1.addEventListener('mouseenter', () => {
+  c2.addEventListener('mouseenter', () => {
+    c2.style.backgroundColor = 'red';
+  });
+});
+
+c3.addEventListener('mouseenter', () => {
+  c2.addEventListener('mouseenter', () => {
+    c2.style.backgroundColor = 'blue';
+  });
+});
+
+c2.addEventListener('mouseleave', () => {
+  c2.style.backgroundColor = 'white';
+  c2.addEventListener('mouseenter', () => {
+    c2.style.backgroundColor = 'white';
+  });
+});
+
+// Ejercicio 8
