@@ -41,7 +41,6 @@ doc.addEventListener('mousemove', (event) => {
 });
 
 // Ejercicio 7
-
 c1.addEventListener('mouseenter', () => {
   c2.addEventListener('mouseenter', () => {
     c2.style.backgroundColor = 'red';
@@ -62,3 +61,33 @@ c2.addEventListener('mouseleave', () => {
 });
 
 // Ejercicio 8
+document.addEventListener('keypress', (e) => {
+  if (e.key === '1') {
+    ficha1.classList = 'visible';
+    ficha2.classList = 'oculto';
+    ficha3.classList = 'oculto';
+  } else if (e.key === '2') {
+    ficha2.classList = 'visible';
+    ficha1.classList = 'oculto';
+    ficha3.classList = 'oculto';
+  } else if (e.key === '3') {
+    ficha3.classList = 'visible';
+    ficha1.classList = 'oculto';
+    ficha2.classList = 'oculto';
+  }
+});
+
+// Ejercicio 9
+document.addEventListener('scroll', () => {
+  if (window.scrollY >= 25) {
+    scrollBtn.classList = 'visible-scroll';
+  }
+});
+
+// Ejercicio 10
+letras.addEventListener('input', () => {
+  if (/\d+/.test(letras.value)) {
+    alert('Introduciste un numero');
+    letras.value = letras.value.slice(0, -1);
+  }
+});

@@ -1,3 +1,7 @@
+body {
+  height: 200vh;
+}
+
 #container {
   display: flex;
   justify-content: center;
@@ -10,7 +14,11 @@
 
 #block,
 #effect,
-#div {
+#div,
+#ficha1,
+#ficha2,
+#ficha3,
+#boton {
   background-color: rgb(218, 218, 218);
   width: 100%;
   height: 100px;
@@ -58,4 +66,18 @@ span {
   background-color: blue;
   width: 100px;
   height: 100px;
+}
+
+.oculto {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.visible-scroll {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
 }
