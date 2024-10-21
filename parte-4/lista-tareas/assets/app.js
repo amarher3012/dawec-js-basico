@@ -13,8 +13,8 @@ const createEl = () => {
     li.textContent = input;
     ul.appendChild(li);
     li.append(delButton);
-    
-    delButton.className = 'deleteBtn'
+
+    delButton.className = 'deleteBtn';
     delButton.textContent = 'x';
     delButton.addEventListener('click', () => delButton.parentElement.remove());
   }

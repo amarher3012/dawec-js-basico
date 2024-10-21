@@ -41,7 +41,5 @@ const random = (max) => Math.floor(Math.random() * max);
 
 button.addEventListener('click', () => {
   text.innerText = wordArray[random(wordArray.length)];
-  text.style = `color: ${colores[random(colores.length)]}`
+  text.style = `color: ${colores[random(colores.length)]}`;
 });
-
-
