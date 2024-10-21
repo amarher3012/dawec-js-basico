@@ -79,7 +79,9 @@ document.addEventListener('keypress', (e) => {
 
 // Ejercicio 9
 document.addEventListener('scroll', () => {
-  if (window.scrollY >= 25) {
+  if (window.scrollY === 0) {
+    scrollBtn.classList = 'oculto';
+  } else if (window.scrollY >= 25) {
     scrollBtn.classList = 'visible-scroll';
   }
 });
