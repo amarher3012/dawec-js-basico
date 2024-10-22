@@ -7,6 +7,11 @@ const createCompBtn = () => {
   compButton.className = 'completeBtn';
   compButton.textContent = 'Complete';
 
+  compButton.addEventListener('click', () => {
+    compButton.parentElement.style.color = 'green';
+    compButton.style.color = 'green';
+  })
+
   return compButton;
 };
 
@@ -14,6 +19,8 @@ const createDelBtn = () => {
   const delButton = document.createElement('button');
   delButton.className = 'deleteBtn';
   delButton.textContent = 'Delete';
+
+  delButton.addEventListener('click', () => delButton.parentElement.remove())
 
   return delButton;
 };
