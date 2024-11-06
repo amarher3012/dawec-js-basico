@@ -1,5 +1,5 @@
 // Ejercicio 1
-const week_days = [
+const weekDays = [
   'domingo',
   'lunes',
   'martes',
@@ -9,20 +9,48 @@ const week_days = [
   'sabado',
 ];
 
-const input = parseInt(prompt('Introduce un numero del 1 al 7')) - 1
+const input = parseInt(prompt('Introduce un numero del 1 al 7')) - 1;
 
-alert("Es " + week_days[input])
+alert('Es ' + weekDays[input]);
 
 // Ejercicio 2
 
-const booleans = ['Verdadero', 'Falso']
-const input2 = parseInt(prompt('Introduce otro numero del 0 al 9'))
-const bool_test = (input) => {
+const booleans = ['Verdadero', 'Falso'];
+const input2 = parseInt(prompt('Introduce otro numero del 0 al 9'));
+const boolTest = (input) => {
   if (input >= 0 || input <= 9) {
-    alert(booleans[0])
+    alert(booleans[0]);
   } else {
-    alert(booleans[1])
+    alert(booleans[1]);
   }
+};
+
+boolTest(input2);
+
+// Ejercicio 3
+
+const nums = [2, 4, 5, 1, 2];
+const sumaLista = (arr) => {
+  let res = 0;
+  for (let i = 0; i < arr.length; i++) {
+    res += arr[i];
+  }
+  alert(res);
+};
+
+sumaLista(nums);
+
+// Ejercicio 4
+
+const nums2 = [];
+let count = 0;
+while (true) {
+  const input2 = parseInt(prompt('Introduce numeros'));
+  if (isNaN(input2) || input2 === 0) {
+    break;
+  }
+  nums2[count] = input2;
+  count++;
 }
-  
-bool_test(input2)
+
+console.log(nums2);
