@@ -119,14 +119,17 @@ const turnos = [
 ];
 
 const getName = (arr, day) => {
+    let found = '';
     for (let i = 0; i < arr.length; i++) {
         if (arr[i][0] === day) {
-            return arr[i][1];
+            found = arr[i][1];
         }
     }
+    msg = `Encargado/a del ${day} es ${found}`;
+    return msg;
 };
 
-console.log('Encargado/a de este dia es', getName(turnos, 'lunes'));
+console.log(getName(turnos, 'lunes'));
 
 // Ejercicio 10
 
@@ -138,11 +141,14 @@ const products = [
 ];
 
 const getPrecio = (arr, name) => {
+    let found = '';
     for (let i = 0; i < arr.length; i++) {
         if (arr[i][0] === name) {
-            return arr[i][1];
+            found = arr[i][1];
         }
     }
+    msg = `El producto ${name} cuesta $${found}`;
+    return msg;
 };
 
-console.log('El precio del producto es', getPrecio(products, 'monitor'));
+console.log(getPrecio(products, 'monitor'));
