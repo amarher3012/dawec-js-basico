@@ -105,3 +105,44 @@ console.log('isVowel: ', isVowel('A'));
 
 // Ejercicio 8
 const arr = ['rojo', 'verde', 'azul'];
+
+console.log(arr.join('-'));
+
+// Ejercicio 9
+
+const turnos = [
+    ['lunes', 'Maria'],
+    ['martes', 'Luis'],
+    ['miercoles', 'Antonia'],
+    ['jueves', 'Pedro'],
+    ['viernes', 'Marisa'],
+];
+
+const getName = (arr, day) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i][0] === day) {
+            return arr[i][1];
+        }
+    }
+};
+
+console.log('Encargado/a de este dia es', getName(turnos, 'lunes'));
+
+// Ejercicio 10
+
+const products = [
+    ['monitor', 200],
+    ['raton', 30],
+    ['teclado', 100],
+    ['silla', 250],
+];
+
+const getPrecio = (arr, name) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i][0] === name) {
+            return arr[i][1];
+        }
+    }
+};
+
+console.log('El precio del producto es', getPrecio(products, 'monitor'));
