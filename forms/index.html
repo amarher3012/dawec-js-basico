@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+		<script src="assets/js/app.js" defer></script>
+		<link rel="stylesheet" href="assets/css/index.css" />
+	</head>
+	<body>
+		<form action="">
+			<div class="form-div">
+				<label for="name">Nombre:</label>
+				<input type="text" name="name" id="name" />
+			</div>
+			<div class="form-div">
+				<label for="email">E-mail:</label>
+				<input type="email" name="email" id="email" />
+			</div>
+			<div class="form-div">
+				<label for="password">Contrasena:</label>
+				<input type="password" name="password" id="password" />
+			</div>
+			<div class="form-div">
+				<label for="password-check">Reintroduce la contrasena:</label>
+				<input
+					type="password"
+					name="password-check"
+					id="password-check"
+				/>
+			</div>
+			<div class="form-div">
+				<label for="math-check">Operacion matematica:</label>
+				<input type="text" name="math-check" id="math-check" />
+			</div>
+			<div class="form-div-check">
+				<small>Acepto las condiciones</small>
+				<input type="checkbox" name="conditions" id="conditions" />
+			</div>
+
+			<button type="submit" id="submit-btn">Crear cuenta</button>
+		</form>
+	</body>
+</html>
