@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+		<script src="assets/js/app2.js" defer></script>
+		<link rel="stylesheet" href="assets/css/index.css" />
+	</head>
+	<body>
+		<form action="" method="post">
+			<div class="form-div">
+				<label for="username">Nombre de usuario:</label>
+				<input type="text" name="username" id="username" />
+			</div>
+			<div class="form-div">
+				<label for="password">Contrasena:</label>
+				<input type="password" name="password" id="password" />
+			</div>
+			<div class="form-div">
+				<label for="password-check">Reintroduce la contrasena:</label>
+				<input
+					type="password"
+					name="password-check"
+					id="password-check"
+				/>
+			</div>
+			<div class="form-div">
+				<label for="city">Poblacion:</label>
+				<select name="city" id="city">
+					<option value="select" default>- Seleccione -</option>
+					<option value="cuartillos">Cuartillos</option>
+					<option value="elportal">El Portal</option>
+					<option value="estella">Estella del Marques</option>
+					<option value="guadalcacin">Guadalcacin</option>
+					<option value="jerez">Jerez de la Frontera</option>
+				</select>
+			</div>
+
+			<button type="submit" id="submit-btn">Crear cuenta</button>
+		</form>
+	</body>
+</html>

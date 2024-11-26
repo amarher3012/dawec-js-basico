@@ -13,8 +13,12 @@ form {
 	margin: auto;
 }
 
-form input {
-	height: 20px;
+form input,
+#city {
+	height: 25px;
+	font-size: 16px;
+	padding-left: 5px;
+	box-sizing: border-box;
 }
 
 .form-div {
@@ -30,13 +34,13 @@ form input {
 }
 
 #submit-btn {
-    font-family: inherit;
+	font-family: inherit;
 	align-self: center;
 	width: 50%;
 	padding: 5px;
 }
 
 span {
-    font-size: small;
-    color: red;
+	font-size: small;
+	color: red;
 }
