@@ -50,7 +50,7 @@ function validateInput(input) {
 		}
 	} else if (
 		input.id === 'math-check' &&
-		!/^\d+\+\d+\=\d+$/.test(input.value)
+		!/^\d+(\+|\-|\*|\/)\d+\=\d+$/.test(input.value)
 	) {
 		isValid = false;
 		if (!errorSpan) {
